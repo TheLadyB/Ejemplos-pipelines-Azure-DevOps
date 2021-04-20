@@ -30,7 +30,7 @@ steps:
                  }
              }
              #Target Branch es qa
-             if($targetBranch.ToLower().Contains("refs/heads/integracion")){
+             if($targetBranch.ToLower().Contains("refs/heads/qa")){
                  Write-Output "Target es QA"
                  if($targetBranch.ToLower().Contains("refs/heads/qa") -AND  -not($sourceBranch.ToLower().Contains("refs/heads/develop/")) -AND -not($sourceBranch.ToLower().Contains("refs/heads/hotfix/")) )
                  {
